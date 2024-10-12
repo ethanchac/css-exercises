@@ -2,20 +2,53 @@
 
 body {
   height: 100vh;
+  display:flex;
+  flex-direction: column;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
 }
-
+.footer{
+  background-color: #eeeeee;
+}
+.left-links{
+  list-style-type: none;
+  
+}
+.header,
+.footer{
+  display:flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+.content{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.right-links{
+  list-style-type:none;
+  justify-content: flex-end;
+}
 img {
   width: 600px;
 }
-
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
